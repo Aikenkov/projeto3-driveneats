@@ -53,6 +53,7 @@ body {
 .food-options {
     display: flex;
     margin-bottom: 27px;
+    overflow-x: scroll;
 }
 
 .option {
@@ -65,6 +66,7 @@ body {
     border-radius: 9px;
     box-sizing: border-box;
     padding: 18px 14px 14px 14px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.40);
     margin-right: 16px;
 }
 
@@ -86,4 +88,37 @@ body {
     font-weight: 400;
     font-size: 17px;
     color: #000000;
+}
+
+.bottom-margin {
+    margin-bottom: 108px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 92px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #CBCBCB;
+    height: 53px;
+    width: 364px;
+    border-radius: 50px;
+}
+
+.bottom p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
