@@ -51,5 +51,9 @@ function enableOrder() {
     }
 }
 
-let strPedido = `Olá, gostaria de fazer o pedido: \n- Prato: Frango Yin Yang \n- Bebida: Coquinha Gelada \n- Sobremesa: Pudim \nTotal: R$ 27.70`;
+let strPedido = `Olá, gostaria de fazer o pedido: \n
+ - Prato: Frango Yin Yang \n
+ - Bebida: Coquinha Gelada \n
+ - Sobremesa: Pudim \n
+ Total: R$ 27.70`;
 let meuPedido = encodeURIComponent(strPedido);
