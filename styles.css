@@ -16,6 +16,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 3;
 }
 
 .top h1 {
@@ -50,7 +51,9 @@ body {
     letter-spacing: 1px;
 }
 
-.food-options {
+.food-options,
+.dessert-options,
+.drink-options {
     display: flex;
     margin-bottom: 27px;
     overflow-x: scroll;
@@ -62,12 +65,23 @@ body {
     justify-content: space-between;
     width: 172px;
     height: 216px;
+    border: solid 5px #FFFFFF;
     background-color: #FFFFFF;
     border-radius: 9px;
     box-sizing: border-box;
-    padding: 18px 14px 14px 14px;
+    padding: 13px 9px 9px 9px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.40);
     margin-right: 16px;
+    position: relative;
+}
+
+.vector {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 12px;
+    right: 11px;
+    opacity: 0;
 }
 
 .option h3 {
@@ -90,7 +104,7 @@ body {
     color: #000000;
 }
 
-.bottom-margin {
+.dessert-options {
     margin-bottom: 108px;
 }
 
@@ -121,4 +135,12 @@ body {
     font-size: 19px;
     font-weight: 400;
     color: #FFFFFF;
+}
+
+.selected {
+    border: solid 5px #32B72F;
+}
+
+.selected img {
+    opacity: 1;
 }
