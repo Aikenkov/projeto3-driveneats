@@ -120,7 +120,7 @@ body {
     left: 0;
 }
 
-.bottom div {
+.disabled {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,9 +131,26 @@ body {
     border-radius: 50px;
 }
 
+.able {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #32B72F;
+    height: 53px;
+    width: 364px;
+    border-radius: 50px;
+}
+
 .bottom p {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
+    color: #FFFFFF;
+}
+
+.bottom h1 {
+    font-size: 20px;
+    font-weight: 700;
     color: #FFFFFF;
 }
 
@@ -143,4 +160,8 @@ body {
 
 .selected img {
     opacity: 1;
+}
+
+.hide {
+    display: none;
 }
